@@ -28,6 +28,18 @@ import * as formUtils from "warehouse/utils/forms";
 import Clipboard from "clipboard";
 import PositionWarning from "warehouse/utils/position-warning";
 import Statuspage from "warehouse/utils/statuspage";
+import searchFilterToggle from "warehouse/utils/search-filter-toggle";
+import projectTabs from "warehouse/utils/project-tabs";
+import timeAgo from "warehouse/utils/timeago";
+
+// toggle search panel behavior
+docReady(searchFilterToggle);
+
+// project detail tabs
+docReady(projectTabs);
+
+// timestamps for project histories
+docReady(timeAgo);
 
 // Kick off the client side HTML includes.
 docReady(HTMLInclude);
