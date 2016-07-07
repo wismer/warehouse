@@ -49,19 +49,6 @@ $(document).ready(function() {
     setTab(getTab(location.hash));
   });
 
-  // Launch filter popover on mobile
-  $("body").on("click", ".-js-add-filter", function(e){
-    e.preventDefault();
-    $(".-js-dark-overlay").show();
-    $(".-js-filter-panel").show();
-  });
-
-  $("body").on("click", ".-js-close-panel", function(e){
-    e.preventDefault();
-    $(".-js-dark-overlay").hide();
-    $(".-js-filter-panel").hide();
-  });
-
   $.timeago.settings.cutoff = 7 * 24 * 60 * 60 * 1000;  // One week
 
   // document.l10n.ready.then(function() {
